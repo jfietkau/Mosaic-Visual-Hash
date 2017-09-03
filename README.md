@@ -16,7 +16,7 @@ Additionally, the algorithm is intentionally not 100% deterministic. Small rando
 
 You can check to see what it looks like right here:
 
-[]()
+[https://jfietkau.github.io/Mosaic-Visual-Hash/demo.html](https://jfietkau.github.io/Mosaic-Visual-Hash/demo.html)
 
 ## Requirements
 
