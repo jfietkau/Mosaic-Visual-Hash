@@ -1,8 +1,8 @@
 /**
- * Mosaic Visual Hash - v1.0
+ * Mosaic Visual Hash - v1.0.1
  * https://github.com/jfietkau/Mosaic-Visual-Hash/
  *
- * Copyright (c) 2017 Julian Fietkau
+ * Copyright (c) 2017-2019 Julian Fietkau
  * Dual licensed under the ISC and GPLv3 licenses.
  *
  *******************************************************************************
@@ -172,7 +172,7 @@
       lineWidth: 0.02,
       jitter: 3
     };
-    for(property in algoParams) {
+    for(var property in algoParams) {
       if(algoParams.hasOwnProperty(property)) {
         newParams[property] = algoParams[property];
       }
@@ -346,7 +346,7 @@
   function fillInTheColors(colors) {
     var jitteredColors = new Array();
     for(var i = 0; i < colors.length; i++) {
-      jittered = {}
+      var jittered = {};
       jittered.r = Math.max(0, Math.min(255, colors[i].r + (Math.random() - 0.5) * params.jitter * 5));
       jittered.g = Math.max(0, Math.min(255, colors[i].g + (Math.random() - 0.5) * params.jitter * 5));
       jittered.b = Math.max(0, Math.min(255, colors[i].b + (Math.random() - 0.5) * params.jitter * 5));
